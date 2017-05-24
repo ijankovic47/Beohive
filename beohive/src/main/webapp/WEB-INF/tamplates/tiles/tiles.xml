@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+ 
+<tiles-definitions>  
+  
+   <!-- Base Definition -->
+   <definition name="base-layout"
+       template="/WEB-INF/tamplates/tiles/layout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/tamplates/tiles/header.jsp" />
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/tamplates/tiles/footer.jsp" />  
+   </definition>  
+   
+   <definition name="login-layout"
+       template="/WEB-INF/tamplates/tiles/tmpl-login.jsp">   
+       <put-attribute name="title" value="" /> 
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/tamplates/tiles/footer.jsp" />  
+   </definition>  
+  
+   <!-- Home Page -->
+   <definition name="index" extends="base-layout">  
+       <put-attribute name="title" value="Beohive" />  
+       <put-attribute name="body" value="/WEB-INF/views/index.jsp" />  
+       <put-attribute name="jquery" value=""/>
+   </definition>  
+   
+   <!-- Login Page -->
+   <definition name="login" extends="login-layout">  
+       <put-attribute name="title" value="Login | Beohive" />  
+       <put-attribute name="body" value="/WEB-INF/views/login.jsp" />  
+   </definition>  
+ 
+   <!-- Operateri -->
+   <definition name="operateri" extends="base-layout">  
+       <put-attribute name="title" value="Operateri | Beohive" />  
+       <put-attribute name="body" value="/WEB-INF/views/operateri.jsp" />  
+       <put-attribute name="jquery" value="operateri.jqr.js"/>
+   </definition>  
+       
+   <!-- Partneri -->
+   <definition name="partners" extends="base-layout">  
+       <put-attribute name="title" value="Partneri | Beohive" />  
+       <put-attribute name="body" value="/WEB-INF/views/partners.jsp" />  
+       <put-attribute name="jquery" value="partneri.jqr.js"/>
+   </definition>  
+     <definition name="paketiEdit" extends="base-layout">  
+       <put-attribute name="title" value="Paketi | Beohive" />  
+       <put-attribute name="body" value="/WEB-INF/views/paketiEdit.jsp" />  
+       <put-attribute name="jquery" value="paketi.jqr.js"/>
+   </definition>  
+     <definition name="paketiView" extends="base-layout">  
+       <put-attribute name="title" value="Paketi | Beohive" />  
+       <put-attribute name="body" value="/WEB-INF/views/paketiView.jsp" />  
+       <put-attribute name="jquery" value="paketi.jqr.js"/>
+   </definition>  
+  
+  <!-- Subscribers -->
+   <definition name="korisnici" extends="base-layout">  
+       <put-attribute name="title" value="Korisnici | Beohive" />  
+       <put-attribute name="body" value="/WEB-INF/views/korisnici.jsp" />  
+       <put-attribute name="jquery" value="korisnici.jqr.js"/>
+   </definition> 
+     
+   <!-- Uređaji -->
+   <definition name="uredjaji" extends="base-layout">  
+       <put-attribute name="title" value="Uređaji | Beohive" />  
+       <put-attribute name="body" value="/WEB-INF/views/uredjaji.jsp" />  
+       <put-attribute name="jquery" value="uredjaji.jqr.js"/>
+   </definition> 
+   
+   <!-- Paketi -->
+   <definition name="paketi" extends="base-layout">  
+       <put-attribute name="title" value="Paketi | Beohive" />  
+       <put-attribute name="body" value="/WEB-INF/views/paketi.jsp" />  
+       <put-attribute name="jquery" value="uredjaji.jqr.js"/>
+   </definition> 
+   
+   <!-- Modeli -->
+   <definition name="modeli" extends="base-layout">  
+       <put-attribute name="title" value="Modeli | Beohive" />  
+       <put-attribute name="body" value="/WEB-INF/views/modeli.jsp" />  
+       <put-attribute name="jquery" value="modeli.jqr.js"/>
+   </definition> 
+   <!-- Administracija -->
+   <definition name="administracija" extends="base-layout">  
+       <put-attribute name="title" value="Administracija | Beohive" />  
+       <put-attribute name="body" value="/WEB-INF/views/administracija.jsp" />  
+       <put-attribute name="jquery" value="administracija.jqr.js"/>
+   </definition> 
+  
+</tiles-definitions>
